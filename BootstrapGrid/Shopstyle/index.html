@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- aos cdn -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+  body{
+    background-color: #6cb0ef;
+    background-image: linear-gradient(62deg, #6cb0ef 0%, #ce63f3 100%);
+    height: 100%;
+  }
+  .text-gradient{
+    background: linear-gradient(90deg, rgba(168,68,232,0.7960434173669468) 0%, rgba(210,13,235,0.9613095238095238) 28%, rgba(0,142,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .carousel-item>img {
+    height: 300px;
+  }
+  .card>img{
+    width: 100%;
+    height: 300px;
+  }
+</style>
+<body>
+  <!-- nav section start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+    <div class="container ">
+      <a class="navbar-brand ps-4" href="#">Stay Beauty</a>
+      <!-- property attribute dataproperty(js) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ps-4" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All Products</a></li>
+              <!-- hr-horizontal rule -->
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Popular Items</a></li>
+              <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex ">
+          <button class="btn btn-outline-dark" type="submit">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+            <span class="badge text-bg-dark rounded-circle">0</span></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav section end -->
+
+  <!-- carousel section start-->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/7408483.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/360_F_465465254_1pN9MGrA831idD6zIBL7q8rnZZpUCQTy.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/ecommerce_website_banner_template_shoppers_sketch_6920121.jpg" class="d-block w-100"
+          alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel section end -->
+
+  <!-- banner section -->
+   <div class="container-fluid bg-dark p-5">
+    <h6 class="text-white text-center display-5 fw-bold text-gradient">Shop in Style</h6>
+    <h6 class="text-white-50 text-center text-gradient">Everyone deserves to dress well</h6>
+   </div>
+   <!-- banner section end -->
+
+  <!-- product list section -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-0 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/pexels-violetaneamtu-15898462.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Duo Blush</h5>
+            <p class="card-text">$40.00 - $80.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">View Options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-0 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/pexels-karolina-grabowska-4938507.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Concealer</h5>
+            <p class="card-text"><s>$20.00</s> $18.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-0 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/pexels-ds-stories-7256102.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Setting powder</h5>
+            <p class="card-text"><s>$50.00</s> $25.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-0 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/glenna-haug-DuNXXPScbJM-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hair Mask</h5>
+            <p class="card-text">$40.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-2 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/karly-jones-jaV6cvSEqao-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lipstick</h5>
+            <p class="card-text">$40.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">View Options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-2 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/isaac-wolff-vbt81PHaOh0-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Day Cream</h5>
+            <p class="card-text"><s>$30.00</s> $20.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-2 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/lilli-p-4B7CajNDgSo-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lip Color</h5>
+            <p class="card-text"><s>$80.00</s> $45.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12 mt-lg-2 mt-md-2 mt-2" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 100%;">
+          <img src="./images/jessica-weiller-So4eFi-d1nc-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Perfume</h5>
+            <p class="card-text">$50.00</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- productlist end section-->
+
+  <!-- footer section start-->
+  <footer class="bg-dark p-3 mt-3">
+    <h5 class="text-white text-center">Copyright@</h5>
+  </footer>
+  <!-- footer section end -->
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
